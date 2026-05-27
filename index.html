@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
 
     <div class="up-btn">
         <a href="#">
@@ -19,52 +20,143 @@
         </a>
     </div>
 
+    <nav>
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-close"></i>
+                <li><a class="menu-links" href="#">HOME</a></li>
+                <li><a class="menu-links" href="#about">ABOUT</a></li>
+                <li><a class="menu-links" href="#skill-exp">SKILLS</a></li>
+                <li><a class="menu-links" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="side-menu-layer" id="menu-layer"></div>
+        <div class="logo">
+            <h2>FS</h2>
+        </div>
+        <div class="menu-items">
+            <ul>
+                <li><a class="menu-links" href="#">HOME</a></li>
+                <li><a class="menu-links" href="#about">ABOUT</a></li>
+                <li><a class="menu-links" href="#skill-exp">SKILLS</a></li>
+                <li><a class="menu-links" href="#contact">CONTACT</a></li>
+                <i id="open-menu" class="fa-solid fa-bars"></i>
+            </ul>
+        </div>
+    </nav>
 
     <div class="hero-container">
-        <div id="gradient"></div>
-        <p>Hi, I am</p>
-        <h1>Farhan Sharbatwale</h1>
-        <h3>Frontend web developer with good hold in ui-ux principles and cretating responsive webpages</h3>
-        <div class="btns">
-            <a href="#contact">Contact</a>
-            <a href="files/New Resume Farhan.pdf" download>
-                <i class="fa-solid fa-download"></i> Resume
-            </a>
+
+
+        <div class="hero-text">
+            <div class="rolebtn">
+                <div class="dot"></div>
+                <p>FRONTEND WEB DEVELOPER</p>
+            </div>
+
+            <p>Hi, I am</p>
+            <h1>Farhan <span class="lastName">Sharbatwale</span></h1>
+            <h3>Frontend web developer crafting sleek, responsive, and user-focused digital experiences with a strong
+                eye for UI/UX and modern web design</h3>
+            <div class="mediaLinks">
+                <a class="media-buttons" href="www.linkedin.com/in/farhan-sharbatwale-685b12375"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="media-buttons" href="https://github.com/FarhanSharbatwale"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="btns">
+                <a href="#contact">Contact</a>
+                <a id="resume" href="/files/New Resume Farhan.pdf" download>
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+            </div>
         </div>
+
+        <div class="image">
+            <img class="hero-img" src="/images/farhan-profile.jpeg" alt="Profile picture">
+            <div class="illustration1">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="illustration2">
+                <i class="fa-brands fa-buffer"></i>
+            </div>
+        </div>
+
     </div>
 
 
-    <div class="about-container">
-        <div class="image">
-
-            <img src="images/farhan-profile.jpeg" alt="Profile picture">
-        </div>
-        <div class="card-layout">
-            <div class="info-card">
-                <h2>About</h2> <br>
-                <p>I am Farhan Sharbatwale, a web developer passionate about building responsive and modern websites. I
-                    focus on writing clean, optimized CSS and creating user-friendly interfaces. I enjoy turning ideas
-                    into
-                    functional web experiences and continuously improving my skills in front-end development.
-                </p>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-instagram"></i>
+    <div class="about-container" id="about">
+        <h1>About <span>Me</span></h1>
+        <div class="about-info">
+            <div class="about-infocards" id="intro">
+                <h2>
+                    <div class="circle"><i class="fa-solid fa-user"></i></div> Introduction
+                </h2>
+                <p>Currently a student with a growing passion for technology, I’ve always been curious about how digital
+                    experiences are created and how design influences the way people interact online. What started as
+                    simple curiosity slowly became a journey of learning, experimenting, and building skills while
+                    continuously pushing myself to improve.</p>
+                <p>Get in touch -</p>
+                <div class="mediaLinks3">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
+            <div class="about-infocards" id="education">
+                <h2>
+                    <div class="circle"><i class="fa-solid fa-graduation-cap"></i></div> Education
+                </h2>
+                <p><span>Standard X(SSC-2021) : </span>Emmanuel English School Sangli <span
+                        class="edu-info">79.40%</span></p>
+                <p><span>Standard XII(HSC-2023) : </span>Sanjay Ghodawat Olympiad School <span
+                        class="edu-info">74.67%</span></p>
+                <p><span>Competitive Exams : </span>JEE - <span class="edu-info">91.31%ile</span>, CET - <span
+                        class="edu-info">94.22%ile</span></p>
+                <p><span>Graduation(B.Tech) : </span>Pursuing Computer Science and Information Technology at Rajarambapu
+                    Institute of Technology, <span class="edu-info">CGPA - 8.29</span></p>
+            </div>
+        </div>
 
-            <div class="info-card">
-                <h2>Skills</h2> <br>
-
-                <div class="skill-layout">
-                    <h3> <i class="fa-brands fa-html5"></i> HTML</h3>
-                    <h3> <i class="fa-brands fa-css3-alt"></i> CSS</h3>
-                    <h3> <i class="fa-brands fa-js"></i> JavaScript</h3>
-                    <h3> <i class="fa-brands fa-react"></i> React js</h3>
-                    <h3> <i class="fa-brands fa-uikit"></i> UI-UX</h3>
-                    <h3> <i class="fa-brands fa-figma"></i> Figma</h3>
-                    <h3> <i class="fa-solid fa-brush"></i> Graphic Designing</h3>
-                    <h3> <svg role="img" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
-                            id="Photopea--Streamline-Simple-Icons" height="18" width="18">
+        <h1 id="skill-exp">Skills & <span> Experience </span></h1>
+        <div class="about-skills">
+            <div class="about-infocards" id="skills">
+                <h2>
+                    <div class="circle"><i class="fa-solid fa-screwdriver-wrench"></i></div> Key Skills
+                </h2>
+                <div class="skill-container">
+                    <div class="skill-card">
+                        <i class="fa-solid fa-code"></i> Web Development
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5"></i> HTML
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt"></i> CSS
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js"></i> JavaScript
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-react"></i> React.Js
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-angular"></i> Angular
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-figma"></i> UIUX-Figma
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-hexagon-nodes"></i> Data Analysis & Machine Learning
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python"></i> Python
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-brush"></i> Graphic Design
+                    </div>
+                    <div class="skill-card">
+                        <svg role="img" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                            id="Photopea--Streamline-Simple-Icons" height="14" width="14">
                             <desc>
                                 Photopea Streamline Icon: https://streamlinehq.com
                             </desc>
@@ -73,19 +165,32 @@
                                 d="M15.0735 0A2.92425 2.92425 0 0 1 18 2.92725v12.145499999999998A2.92425 2.92425 0 0 1 15.0735 18H4.79475l-0.03825 -7.755v-0.055499999999999994c0 -2.94 2.334 -5.3175 5.22225 -5.3175 1.7325 0 3.1327499999999997 1.4264999999999999 3.1327499999999997 3.1904999999999997 0 1.7639999999999998 -1.40025 3.1904999999999997 -3.1327499999999997 3.1904999999999997 -0.5775 0 -1.04475 -0.47550000000000003 -1.04475 -1.0635 0 -0.58725 0.46725 -1.0635 1.04475 -1.0635 0.57675 0 1.044 -0.47550000000000003 1.044 -1.0635 0 -0.5880000000000001 -0.46725 -1.0635 -1.044 -1.0635 -1.7325 0 -3.1334999999999997 1.4249999999999998 -3.1334999999999997 3.18975 0 1.7639999999999998 1.401 3.1904999999999997 3.1334999999999997 3.1904999999999997 2.8875 0 5.2215 -2.37675 5.2215 -5.3175 0 -2.94 -2.334 -5.316750000000001 -5.2215 -5.316750000000001 -4.0424999999999995 0 -7.3125 3.327 -7.3125 7.4437500000000005v0.0645l0.01725 7.73625A2.92425 2.92425 0 0 1 0 15.072750000000001V2.92725A2.92425 2.92425 0 0 1 2.9265 0z"
                                 fill="#ffffff" stroke-width="0.75"></path>
                         </svg> Photopea
-                    </h3>
+                    </div>
                 </div>
+            </div>
+            <div class="about-infocards" id="experience">
+                <h2>
+                    <div class="circle"><i class="fa-solid fa-chart-line"></i></div> Experience
+                </h2>
+                <p>As a student, my experience comes from working on academic projects, self-learning, and building
+                    projects out of curiosity and interest. I enjoy exploring real-world problems and turning ideas into
+                    practical solutions while continuously improving my skills. Currently, I am working on an
+                    industry-collaborated capstone project to develop an ERP system for organizational and industrial
+                    process management.</p>
             </div>
         </div>
 
+        <!-- <div id="gradient-about"></div>
+        <div id="vignette-about"></div> -->
     </div>
+
 
 
     <div class="contact-container">
         <div id="contact" class="contact-info">
             <div class="contact-form">
                 <h2>Contact</h2> <br>
-                <form>
+                <form action="https://formsubmit.co/farhan.csrit@gmail.com" method="post">
                     <input id="name" name="name" type="text" placeholder="Enter Name" required>
                     <input id="email" name="email" type="email" placeholder="Enter Email" required>
                     <textarea id="subject" name="subject" id="message" placeholder="subject" required></textarea>
@@ -101,9 +206,9 @@
 
         </div>
     </div>
+    <div id="gradient"></div>
+    <div id="vignette"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
